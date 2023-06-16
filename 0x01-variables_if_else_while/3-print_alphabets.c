@@ -13,10 +13,10 @@ for (i = 0 ; i < 26 ; i++)
 {
 putchar(x[i]);
 }
-for (i = 26 ; i < 52 ; i++)
+for (i = 0 ; i < 26 ; i++)
 {
 putchar(a[i]);
 }
 putchar('\n');
 return (0);
-}                  
+}
