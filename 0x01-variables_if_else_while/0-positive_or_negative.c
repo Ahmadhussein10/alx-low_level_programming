@@ -18,11 +18,11 @@ printf("%d is positive\n", n);
 }
 else if (n == 0)
 {
-printf("%d is zero", n);
+printf("%d is zero\n", n);
 }
 else
 {
-printf("%d negative", n);
+printf("%d negative\n", n);
 }
 return (0);
 }
