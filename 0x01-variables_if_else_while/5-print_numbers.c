@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Prints the numbers.
  *
@@ -7,12 +6,11 @@
  */
 int main(void)
 {
-
- for(int i=0;i<10;i++)
- {
-         printf("%d",i);
- }
- putchar('\n');
- return 0;
+int i;	
+for (i = 0 ; i < 10 ; i++)
+{
+printf("%d",i);
 }
-~                  
+putchar('\n');
+return 0;
+}                  
