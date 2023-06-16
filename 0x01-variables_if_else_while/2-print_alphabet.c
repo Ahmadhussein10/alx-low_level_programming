@@ -7,10 +7,10 @@
 int main(void)
 {
 int i;
-char x[26] = "abcdefghijklmnopqrstuvwxyz"; 
+char x[26] = "abcdefghijklmnopqrstuvwxyz";
 for (i = 0; i < 26; i++)
 {
-putchar(x[i]); 
+putchar(x[i]);
 }
 putchar('\n');
 return (0);
