@@ -7,10 +7,10 @@
  */
 int main(void)
 {
- int x [10] = "0123456789";
- for(int i=0;i<=10;i++)
+
+ for(int i=0;i<10;i++)
  {
-         printf(x[i]);
+         printf("%d",i);
  }
  putchar('\n');
  return 0;

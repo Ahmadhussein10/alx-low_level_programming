@@ -7,7 +7,7 @@
  */
 int main(void)
 {
- char x [26] ={a,b,c,d,e,f,g,h,i,j,k,m,n,l,o,p,q,r,s,t,u,v,w,x,y,z};
+ char x [26] ={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'}; 
  for(int i=0;i<26;i++)
  {
 	 putchar(x[i]);
