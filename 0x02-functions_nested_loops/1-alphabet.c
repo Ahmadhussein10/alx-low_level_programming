@@ -2,7 +2,7 @@
 /*
  * print_alphabet - print all alphabet in lowercase
  */
-void print_alphabet(void)//print_alphabet - print all alphabet in lowercase
+void print_alphabet(void) //print_alphabet - print all alphabet in lowercase
 {
 char ch;
 for (ch = 'a' ; ch <= 'z' ; ch++)
