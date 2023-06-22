@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * function that prints numbers except 2 & 4
  * return : void
