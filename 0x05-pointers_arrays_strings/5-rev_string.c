@@ -13,7 +13,8 @@ void rev_string(char *s)
 	int i = 0;
 
 	while (s[counter] != '\0')
-counter++;
+	{
+	counter++;
 	for (i = 0; i < counter; i++)
 	{
 		counter--;
@@ -21,4 +22,5 @@ counter++;
 		s[i] = s[counter];
 		s[counter] = rev;
 	}
+}
 }
