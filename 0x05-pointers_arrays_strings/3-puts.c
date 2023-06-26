@@ -7,8 +7,7 @@ void _puts(char *str)
 {
 while (*str != '\0')
 	{
-	printf("%d",*str);
-		*str++;
+	printf("%d",*str++);
 	}
 		_putchar('\n');
 }
