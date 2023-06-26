@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * 98 Battery st. - function that takes a pointer updates the value it points
+ * reset_to_98 - function that takes a pointer updates the value it points
  * @n: input
  * return n
  */
