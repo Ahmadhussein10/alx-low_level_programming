@@ -6,18 +6,20 @@
  */
 void print_rev(char *s)
 {
-char temp,*q=s;
-while(*q!='\0')
-{
-	q++;
-}
-	q--;
-	while(s<q)
-{
-	temp=*s;
-	*s=*q;
-	*q=temp;
-	s++;
-	q--;
-}
+	int longi = 0;
+	int o;
+
+	while (*s != '\0')
+	{
+		longi++;
+		s++;
+	}
+	s--;
+	for (o = longi; o > 0; o--)
+	{
+		_putchar(*s);
+		s--;
+	}
+
+	_putchar('\n');
 }
