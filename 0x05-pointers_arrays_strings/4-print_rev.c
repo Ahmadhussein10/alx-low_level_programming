@@ -5,11 +5,17 @@
  * return: 0
  */
 void print_rev(char *s)
-{
-	
-while (*s = '\0')
-{
-	_putchar(*s--);
-}
- _putchar('\n');
-}
+ char temp,*q=s;
+	while(*q!='\0')
+	{
+	q++;
+	}
+	q--;
+	while(s<q)
+	{
+	temp=*p;
+	*p=*q;
+	*q=temp;
+	p++;
+	q--
+	}
