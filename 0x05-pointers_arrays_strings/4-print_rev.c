@@ -14,10 +14,10 @@ while(*q!='\0')
 	q--;
 	while(s<q)
 {
-	temp=*p;
-	*p=*q;
+	temp=*s;
+	*s=*q;
 	*q=temp;
-	p++;
-	q--
+	s++;
+	q--;
 }
 }
