@@ -1,14 +1,15 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * main-print sum of 2 numbers
- * @agrc:number of commandline.
- * @argv:pointer to an array pf command line.
- * return:0 success, 1 fail
+ * main - multiplies two numbers
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: 0(success), 1(error)
  */
 int main(int argc, char *argv[])
 {
 	int sum;
+
 	if (argc == 3)
 {
 	sum = atoi(argv[1]) * atoi(argv[2]);
