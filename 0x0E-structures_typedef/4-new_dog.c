@@ -87,7 +87,7 @@ dog->owner = malloc(sizeof(char) * (len2 + 1));
 if (dog->owner == NULL)
 {
 	free(dog);
-	free(dog->name);	
+	free(dog->name);
 	return (NULL);
 }
 	_strcpy(dog->name, name);
