@@ -7,11 +7,11 @@
  *
  * Return: Always 0.
  */
-int main(argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	int num1, num2;
 	char *op;
-	void(__attribute__);
+	
 
 
 	if (argc != 4)
