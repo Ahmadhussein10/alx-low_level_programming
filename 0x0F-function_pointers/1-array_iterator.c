@@ -2,6 +2,7 @@
 /**
  * array_iterator - function given as a parameter on each element of an array
  * @size: is the size of the array
+ * @array: array
  * @action: is a pointer to the function you need to use
  * Return - nothing
  */
