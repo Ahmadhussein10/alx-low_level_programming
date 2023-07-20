@@ -8,11 +8,6 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	if (n == 0)
-	return (0);
-
-	else
-	{
 	va_list a;
 	unsigned int i, sum = 0;
 
@@ -22,6 +17,5 @@ int sum_them_all(const unsigned int n, ...)
 		sum += va_arg(a, int);
 
 	va_end(a);
-	}
 	return (a);
 }
