@@ -4,6 +4,6 @@
 
 int main()
 {
-    write(STDOUT, "Hello, Holberton\n", 16);
+    write(STDOUT, "Hello, Holberton\n", 17);
     _exit(0);
 }
