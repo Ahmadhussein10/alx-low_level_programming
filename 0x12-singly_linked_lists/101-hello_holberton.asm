@@ -1,9 +1,8 @@
-#include <unistd.h>
-
-#define STDOUT 1
-
-int main()
-{
-    write(STDOUT, "Hello, Holberton\n", 17);
-    _exit(0);
-}
+global main
+extern  printf
+main:
+mov   edi, format
+call  printf
+mov   eax,0
+ret
+format: db `Hello, Holberton\n`,0
