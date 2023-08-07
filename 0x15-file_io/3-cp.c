@@ -77,7 +77,6 @@ int main(int argc, char *argv[])
 			free(buffer);
 			exit(98);
 		}
-
 		w = write(f2, buffer, r);
 		if (f2 == -1 || w == -1)
 		{
@@ -86,15 +85,12 @@ int main(int argc, char *argv[])
 			free(buffer);
 			exit(99);
 		}
-
 		r = read(f1, buffer, 1024);
 		f2 = open(argv[2], O_WRONLY | O_APPEND);
 
 	} while (r > 0);
-
 	free(buffer);
 	close_file(f1);
 	close_file(f2);
-
 	return (0);
 }
