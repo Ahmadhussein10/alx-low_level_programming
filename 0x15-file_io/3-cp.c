@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-char *create_buffer(char *file);
-void close_file(int fd);
+
+
 /**
  * create_buffer - Allocates 1024 bytes for a buffer.
  * @file: The name of the file buffer is storing chars for.
@@ -50,9 +50,9 @@ void close_file(int fd)
  * Return: 0 on success.
  *
  * Description: If the argument count is incorrect - exit code 97.
- * If file_1 does not exist or cannot be read - exit code 98.
- * If file_2 cannot be created or written to - exit code 99.
- * If file_2 or file_1 cannot be closed - exit code 100.
+ * If file_from does not exist or cannot be read - exit code 98.
+ * If file_to cannot be created or written to - exit code 99.
+ * If file_to or file_from cannot be closed - exit code 100.
  */
 int main(int argc, char *argv[])
 {
@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_1 file_2\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
 		if (f1 == -1 || r == -1)
 		{
 			dprintf(STDERR_FILENO,
-				"Error: Can't read f1 file %s\n", argv[1]);
+				"Error: Can't read from file %s\n", argv[1]);
 			free(buffer);
 			exit(98);
 		}
@@ -83,7 +83,7 @@ int main(int argc, char *argv[])
 		if (f2 == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO,
-				"Error: Can't write f2 %s\n", argv[2]);
+				"Error: Can't write to %s\n", argv[2]);
 			free(buffer);
 			exit(99);
 		}
